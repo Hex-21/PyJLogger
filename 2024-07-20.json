@@ -1,6 +1,0 @@
-{"timestamp": "2024-07-20#18:14:31.686", "level": "DEBUG", "message": "This is a debug message", "logger": "test_logger_name", "module": "tester.py", "function": "testfunc", "line": 6}
-{"timestamp": "2024-07-20#18:14:31.686", "level": "INFO", "message": "This is an info message", "logger": "test_logger_name", "module": "tester.py", "function": "testfunc", "line": 7}
-{"timestamp": "2024-07-20#18:14:31.686", "level": "WARNING", "message": "This is a warning message", "logger": "test_logger_name", "module": "tester.py", "function": "testfunc", "line": 8}
-{"timestamp": "2024-07-20#18:14:31.686", "level": "EXCEPTION", "message": "This is an exception message", "logger": "test_logger_name", "module": "tester.py", "function": "testfunc", "line": 9}
-{"timestamp": "2024-07-20#18:14:31.686", "level": "ERROR", "message": "This is an error message", "logger": "test_logger_name", "module": "tester.py", "function": "testfunc", "line": 10}
-{"timestamp": "2024-07-20#18:14:31.686", "level": "CRITICAL", "message": "This is a critical message", "logger": "test_logger_name", "module": "tester.py", "function": "testfunc", "line": 11}
