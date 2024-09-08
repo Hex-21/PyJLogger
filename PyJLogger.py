@@ -23,6 +23,7 @@ import datetime
 import json
 import inspect
 import os
+from os import mkdir
 
 LOG_LEVELS = {
     "DEBUG": 0,
@@ -75,7 +76,10 @@ class CustomLogger:
         if LOG_LEVELS[level] >= self.level:
             print(log_entry)
 
-        with open(file=f"{datetime.datetime.now().strftime("%Y-%m-%d")}.json", mode="a") as f:
+        if not os.path.exists("logs"):
+            mkdir("logs")
+
+        with open(file=f"./logs/{datetime.datetime.now().strftime("%Y-%m-%d")}.json", mode="a") as f:
             f.write(f"{log_entry}\n")
 
     def debug(self, message, logger=None, extra=None):
