@@ -79,7 +79,7 @@ class CustomLogger:
         if not os.path.exists("logs"):
             mkdir("logs")
 
-        with open(file=f"./logs/{datetime.datetime.now().strftime("%Y-%m-%d")}.json", mode="a") as f:
+        with open(file=f"./logs/{datetime.datetime.now().strftime('%Y-%m-%d')}.json", mode="a") as f:
             f.write(f"{log_entry}\n")
 
     def debug(self, message, logger=None, extra=None):
